@@ -1,0 +1,38 @@
+Name: Maan Haj Rachid
+
+Target: Finding the lowest operator for a given prefix.
+
+Solution
+---------
+In this problem, we are tasked with finding the lowest-cost operator for a given phone number prefix.
+ We approach this by processing the input data to build an index, where each prefix maps
+ to a pair consisting of the operator and its associated cost.
+
+To achieve this, we start by parsing the input text and creating a dictionary (index). 
+Each entry in the index represents a prefix, and the corresponding value is a pair 
+containing the operator and its cost.
+
+During index creation, we handle each row by checking if the prefix already exists in the index. 
+If it doesn't, we insert it. If it does exist, we compare the cost of the existing entry with
+ the cost of the current row. If the current row's cost is lower, we update the operator and cost in the index.
+
+Once the index is built, we process the input phone number (pattern). We search for the entire 
+phone number in the index. If a match is found, we report the associated cost. If not, 
+we progressively try shorter prefixes of the phone number until we exhaust all possibilities. 
+If no match is found, we report that a solution could not be found.
+
+
+Analysis of Algorithm
+------------------------
+In terms of space complexity, the index's size is proportional to the number of prefixes in all operators (N). 
+Since the question specifies that all prefixes fit in memory, the space complexity is O(N).
+
+Regarding time complexity, after building the index (which takes O(N) time which is the size of the input), each query 
+requires iterating through the characters in the phone number. The number of characters is typically
+ constant (e.g., 10-12 digits), so the time complexity per query is O(1) in the worst case.
+
+Accordingly, the solution is Optimal in term of time.  
+
+ 
+
+   
