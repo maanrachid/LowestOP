@@ -21,7 +21,7 @@ This is a test for senior software engineers.
     cd LowestOP
     
 3. Compile the code:
-    g++ -std=c++11 -o low_price low_price.cpp price_checker.cpp
+    make
     
 
 4. To run the code:
@@ -35,7 +35,7 @@ This is a test for senior software engineers.
 To run the unit tests:
 1. Compile the test file:
     
-    g++ -std=c++11 -o Test Test.cpp price_checker.cpp
+    make test
     
 
 2. Execute the unit tests:
