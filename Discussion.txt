@@ -32,7 +32,3 @@ requires iterating through the characters in the phone number. The number of cha
  constant (e.g., 10-12 digits), so the time complexity per query is O(1) in the worst case.
 
 Accordingly, the solution is Optimal in term of time.  
-
- 
-
-   
